@@ -5,7 +5,7 @@ const startBrowser = async () => {
   try {
     console.log('Opening the browser...');
     browser = await puppeteer.launch({
-      headless: false,
+      headless: false, //Anteriormente estaba en true para que se ejecute en modo desatendido
       args: ['--disable-setuid-sandbox'],
       ignoreHTTPSErrors: true
     });
